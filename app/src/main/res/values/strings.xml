@@ -1,0 +1,948 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">L3ARN</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Exit App</string>
+    <string name="cling_simple_title">Welcome</string>
+    <string name="cling_simple_msg">Slide right to access more content.</string>
+    <string name="cling_dismiss">OK</string>
+
+    <string name="title_activity_welcome">Home Screen</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+    <string name="slide_1_title">L3ARN</string>
+    <string name="slide_1_desc">The easiest way to learn terms and study for them too!</string>
+
+    <string name="slide_2_title">Content</string>
+    <string name="slide_2_desc">Includes a Math, Science, Social Studies, and Language Arts section. Science also includes 5 subsections.</string>
+
+    <string name="slide_3_title">Study</string>
+    <string name="slide_3_desc">Review with convenient flashcards and/or study with a short quiz.</string>
+
+    <string name="slide_4_title">Navigation Help</string>
+    <string name="slide_4_desc">To get around the app, slide to the right or press the menu button at the top left corner.</string>
+
+
+
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items" translatable="false" >
+        <item >Home</item>
+        <item >Math</item>
+        <item >Science</item>
+        <item >Social Studies</item>
+        <item >Language Arts</item>
+        <item >Study</item>
+        <item >Settings</item>
+    </string-array>
+
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <array name="nav_drawer_icons" translatable="false" >
+        <item>@drawable/ic_home</item>
+        <item>@drawable/ic_people</item>
+        <item>@drawable/ic_photos</item>
+        <item>@drawable/ic_communities</item>
+        <item>@drawable/ic_pages</item>
+        <item>@drawable/ic_study</item>
+        <item>@drawable/ic_settings</item>
+    </array>
+
+      <string
+          name="feedbacktitle">Enter feedback details to send to the developer:
+    </string>
+    <string
+        name="feedbackname">Your Name</string>
+    <string
+        name="feedbackemail">Your Email</string>
+    <string
+        name="feedbackbody">Feedback Details...</string>
+    <string
+        name="feedbackresponse">Would you like an email response?</string>
+    <string
+        name="feedbackbutton">Send Feedback</string>
+    <string
+        name="feedbacktype">Enter feedback type...</string>
+
+    <string
+        name="feedbacktype1">Praise</string>
+    <string
+        name="feedbacktype2">Complain</string>
+    <string
+        name="feedbacktype3">Suggestion</string>
+    <string
+        name="feedbacktype4">Bug</string>
+
+     <string
+         name="feedbackmessagebody_format">To: Encrypt Productions
+    </string>
+    <string
+        name="feedbackmessagebody_responseyes">Requires a response</string>
+    <string
+        name="feedbackmessagebody_responseno">Does not require a response</string>
+    <string
+        name="feedbackmessagesubject_format">Application Feedback (%1$s)</string>
+
+    <string name="Sound">Mute Sound</string>
+    <string name="Sound2">This preference allows you to deactivate the sounds in the game.</string>
+    <!-- Content Description -->
+    <string name="desc_list_item_icon" translatable="false" >Item Icon</string>
+
+    <string-array name="instructions">
+        <item>This is the back side of a flashcard. All the descriptions will be shown here! Swipe to the left to view the next card!</item>
+        <item>Here is another card. Click on me to view the front!</item>
+
+
+    </string-array>
+
+    <string-array name="bio">
+        <item>Definition:\n\n using energy from ATP, the movement of molecules or ions against a concentration gradient across a membrane </item>
+        <item>Definition:\n\n the tendency of unlike molecules to stick together</item>
+        <item>Definition:\n\n in the developing plant, it is the area of cells facing away from the light source so that each elongate in a phototropic response</item>
+        <item>Definition:\n\n the type of plant hormone responsible for promoting cell growth or elongation</item>
+        <item>Definition:\n\n it is by which the surface of a liquid has the ability to cling to the surface of a solid, leading the liquid to move along that solid</item>
+        <item>Definition:\n\n an organisms’ major energy source; sugar and related molecules formed by carbon, hydrogen, and oxygen atoms in a specific ratio</item>
+        <item>Definition:\n\n binding to a specific molecule and transporting it through the membrane, carrier proteins are proteins present in a cell membrane</item>
+        <item>Definition:\n\n in a multicellular organism, the ability of cells to interact with each other and to influence each other’s activity</item>
+        <item>Definition:\n\n a structure that surrounds a cell and regulates the passage of materials between the cell and its environment</item>
+        <item>Definition:\n\n states that all living things are made up of cells, cells are the smallest units of life, and that all cells are produced from pre-existing cells</item>
+        <item>Definition:\n\n a rigid frame that surrounds the cell in plants, bacteria, and some protists; its purpose is to provide strength and support</item>
+        <item>Definition:\n\n the breakdown of glucose molecules to release chemical energy that a cell can use</item>
+        <item>Definition:\n\n found in the cell membrane, a protein that forms a passageway through which specific solutes can pass by diffusion; some channels open and close in response to the binding of specific molecules</item>
+        <item>Definition:\n\n a green pigment that makes photosynthesis possible</item>
+        <item>Definition:\n\n found in plants and some protists, a green organelle that contains chlorophyll and is the site of photosynthesis</item>
+        <item>Definition:\n\n the tendency of molecules of the same kind to stick together</item>
+        <item>Definition:\n\n appearing to control sugar and transport in the phloem, companion cells are the type of small phloem cells adjacent to sieve tube cells</item>
+        <item>Definition:\n\n of a particular chemical substance , the difference within a given area between the highest and lowest concentration </item>
+        <item>Definition:\n\n using a combination of many perfectly-focused thin sections, systems that use the light microscope, laser beams, and computers to produce 3D images</item>
+        <item>Definition:\n\n the ability to see differences between structures resulting from the differences in their capacity to absorb light</item>
+        <item>Definition:\n\n within plants, the systems that produce definite responses to specific stimuli</item>
+        <item>Definition:\n\n the conditions that are held constant throughout an experiment</item>
+        <item>Definition:\n\n covering a plant’s leaves and stems, cuticle is a waxy, non-cellular, waterproof coating that covers a plant’s leaves and stems</item>
+        <item>Definition:\n\n a gel-like substance inside the cell membrane that contains nutrients and in which the organelles are suspended</item>
+        <item>Definition:\n\n through a circular flow of the cytoplasm, the distribution of materials within cells </item>
+        <item>Definition:\n\n through semipermeable membranes, the separation of substances in a solution by means of their unequal diffusion</item>
+        <item>Definition:\n\n the spontaneous movement of particles from an area of higher concentration to an area of lower concentration</item>
+        <item>Definition:\n\n a microscope that uses a beam of electrons to produce images of fine detail</item>
+        <item>Definition:\n\n Requiring energy from ATP, endocytosis is the uptake of particles or molecules by the formation of a vesicle from the cell membrane</item>
+        <item>Definition:\n\n branching from the nuclear envelope, a network of membrane tubes that circulate materials throughout the cell</item>
+        <item>Definition:\n\n the outermost cell layer of plants; also known as, dermal tissue</item>
+        <item>Definition:\n\n a state of balance between opposing actions</item>
+        <item>Definition:\n\n Requiring energy from ATP, exocytosis is the release of molecules from a vesicle that fuses with the cell membrane in order to export molecules from the cell</item>
+        <item>Definition:\n\n the diffusion of molecules across a membrane through binding to carrier proteins; does not require energy from ATP</item>
+        <item>Definition:\n\n with a given objective lens, an area that can be seen through the microscope </item>
+        <item>Definition:\n\n a description of the arrangement of protein molecules in the fluid double layer of phospholipids that make up the cell membrane</item>
+        <item>Definition:\n\n using the ability of substances to fluoresce in the presence of ultraviolet light, a technique used to localize substances in cells</item>
+        <item>Definition:\n\n within the genetic make-up of an organism , a technique used to locate the position of specific genes </item>
+        <item>Definition:\n\n in response to gravity, directional plant growth; may be positive or negative (also called gravitropism)</item>
+        <item>Definition:\n\n a process that allows cell activities to be studies by attaching the green fluorescent protein (GFP) to particular parts of the cell</item>
+        <item>Definition:\n\n flat stack of membranes that receive, modify, and transport products of the endoplasmic reticulum throughout a cell</item>
+        <item>Definition:\n\n in response to gravity, directional plant growth; may be positive or negative (also called geotropism)</item>
+        <item>Definition:\n\n functions in storage, photosynthesis, and support; parts of the plant body that are not included in the dermal or vascular tissue systems</item>
+        <item>Definition:\n\nspecialized epidermal cell that swells and contracts for the purpose of controlling gas exchange through a stoma in a leaf,</item>
+        <item>Definition:\n\n describes a soft plant stem with little or no woody tissue</item>
+        <item>Definition:\n\n a chemical compounds that travels from its production site in an organism to other sites where it produces an effect</item>
+        <item>Definition:\n\n describes a solution in which there is a higher solute concentration than another solution</item>
+        <item>Definition:\n\n describes a solution in which there is a lower solute concentration than another solution</item>
+        <item>Definition:\n\n describes a solution that has the same solute concentration as another solution</item>
+        <item>Definition:\n\n in the stem of a woody plant, a raised spongy region that allows gas exchange between the atmosphere and the interior of the plant</item>
+        <item>Definition:\n\n an instrument with a system of lenses used for magnification in which the specimen is illuminated by a beam of white light</item>
+        <item>Definition:\n\n fats and oils that are formed of carbon, hydrogen, and oxygen atoms in a specific ration; they are insoluble in water</item>
+        <item>Definition:\n\n fluid-filled sacs surrounded by a phospholipid bilayer which is identical to the cell membrane of human cells</item>
+        <item>Definition:\n\n an organelle that contains enzymes to digest food, destroy bacteria, or break down damage organelles in cells containing a nucleus </item>
+        <item>Definition:\n\n calculated as the product of the magnifying powers of the objective lens and the eyepiece, magnification is an increase in the apparent side of an object</item>
+        <item>Definition:\n\n in an experiment , a condition deliberately changed </item>
+        <item>Definition:\n\n a thin layer of tissue covering a surface or lining of a cavity, space, or organ</item>
+        <item>Definition:\n\n the industrial use of synthetics to mimic the actions of membranes</item>
+        <item>Definition:\n\n containing tissue in which cells divide by mitosis, meristems are the growth region of the plant</item>
+        <item>Definition:\n\nmade up of thin-walled cells containing chloroplasts; specialized ground tissue inside a leaf</item>
+        <item>Definition:\n\n for magnifying specimens, an instrument with a lens or system of lenses </item>
+        <item>Definition:\n\n in a eukaryotic cell, organelles that perform cellular respiration </item>
+        <item>Definition:\n\n growth against the gravitational force; also called negative geotropism</item>
+        <item>Definition:\n\n growth away from the light source</item>
+        <item>Definition:\n\n including DNA and RNA, nucleic acids are complex molecules made up of nucleotides</item>
+        <item>Definition:\n\n in cells, an organelle that contains DNA, the genetic material, and directs all cellular activities</item>
+        <item>Definition:\n\n diffusion of water across a selectively permeable membrane</item>
+        <item>Definition:\n\n responsible for photosynthesis; column-shaped mesophyll cells in a plant leaf (palisade tissue cell)</item>
+        <item>Definition:\n\n based on particle composition, attraction and movement, a model established to explain the nature of matter</item>
+        <item>Definition:\n\n the movement of substances along the concentration gradient without the requirement of ATP</item>
+        <item>Definition:\n\n the smooth serous membrane which lines the cavity of the abdomen</item>
+        <item>Definition:\n\n vascular tissue that transports carbohydrates and water from the leaves to other parts of the plant</item>
+        <item>Definition:\n\n forming a cell membrane, a double layer of outward-facing phosphates and inward-facing fatty acids</item>
+        <item>Definition:\n\n a chemical process in which carbon dioxide from the air and water from the soil, in the presence of light energy, produce glucose and oxygen; (“photo” = light; “synthesis” = putting together)</item>
+        <item>Definition:\n\n in response to light, directional plant growth</item>
+        <item>Definition:\n\n due to the outflow of water in a hypertonic environment, the shrinking of the cytoplasm and plasma membrane away from the cell wall</item>
+        <item>Definition:\n\n growth toward the gravitational force; also called positive geotropism</item>
+        <item>Definition:\n\n growth toward the light source</item>
+        <item>Definition:\n\n the ability to do or act; (optics) the degree to which a lens, mirror, or any optical instrument, magnifies; the number of times it multiplies the apparent diameter of an object</item>
+        <item>Definition:\n\n the difference in pressure in two areas that may cause movement of substances</item>
+        <item>Definition:\n\n the explanation of plant nutrient transport from leaves to other parts of the plant, driven by the pressure build-up of hypertonic solution in a leaf phloem</item>
+        <item>Definition:\n\n responsible for many structures and functions, a large molecule formed by amino acids</item>
+        <item>Definition:\n\n in response to a concentration gradient, the relative movement of a particle </item>
+        <item>Definition:\n\n specialized molecules on the surface of the cell to which messenger molecules from other cells can bind</item>
+        <item>Definition:\n\n protein molecules sticking out from cells that allow communication between cells</item>
+        <item>Definition:\n\n the ability to distinguish between two structures that are close together</item>
+        <item>Definition:\n\n through a semi-permeable membrane, the movement of water from a high concentration of solute to a low concentration of solute </item>
+        <item>Definition:\n\n an organelle in cytoplasm that is the site of protein synthesis</item>
+        <item>Definition:\n\n on a plant root, which absorbs water and nutrients, an extension of a specialized dermal cell</item>
+        <item>Definition:\n\n in the xylem in the roots of some plants, the upward force exerted on water</item>
+        <item>Definition:\n\n the plant organ system that includes all tissues located below the ground</item>
+        <item>Definition:\n\n allowing certain particles to pass through it but excluding others</item>
+        <item>Definition:\n\n allows certain particles to pass through while others are excluded</item>
+        <item>Definition:\n\n the plant organ system that includes all tissues located above the ground</item>
+        <item>Definition:\n\n allowing the movement of phloem sap between cells through perforate sides and end walls, sieve tube cells are cylindrical cells lacking nuclei</item>
+        <item>Definition:\n\n cells that receive carbohydrates in plants, according to the pressure-flow theory</item>
+        <item>Definition:\n\n the layer of loosely-spaced mesophyll cells in a leaf, which promote diffusion through the increased distance between cells</item>
+        <item>Definition:\n\n widely held in the 19th century, the idea that life could emerge spontaneously from non-living matter; disproved by Louis Pasteur</item>
+        <item>Definition:\n\n a technique to improve the contrast between structures in cells by the use of stains or colouring agents</item>
+        <item>Definition:\n\n a change in the environment that causes a reaction by the organism</item>
+        <item>Definition:\n\n through the epidermis of a leaf, pores that allow gases to pass</item>
+        <item>Definition:\n\n the total area of external surfaces of an object</item>
+        <item>Definition:\n\n a set of interconnected parts; a system can be classified as open, closed, or isolated</item>
+        <item>Definition:\n\n a stress caused by the action of a pulling force</item>
+        <item>Definition:\n\n group of similar cells that perform a specific function</item>
+        <item>Definition:\n\n a term that relates to the concentration of solute particles in solutions; for example, can be hypertonic, hypotonic, or isotonic</item>
+        <item>Definition:\n\n elements that are required by an organism in small amounts</item>
+        <item>Definition:\n\n through evaporation, the loss of water from leaves </item>
+        <item>Definition:\n\n the tension or pull on water molecules in the xylem due to the evaporation of water through the stomata or lenticels in a plant</item>
+        <item>Definition:\n\n enlarged underground stem that stores food</item>
+        <item>Definition:\n\n firm; plant cells become turgid (firm) when water enters due to a hypotonic surrounding environment</item>
+        <item>Definition:\n\n pressure exerted against a cell wall by the water that has entered the cell through osmosis</item>
+        <item>Definition:\n\n usually large and possibly permanent, membrane-enclosed sac within a cell</item>
+        <item>Definition:\n\n transport tissue that is formed of cells joined into tubes that carry water and nutrients through the body of the plant</item>
+        <item>Definition:\n\n membrane-enclosed sac that transports materials throughout a cell; has a structure similar to a vacuole</item>
+        <item>Definition:\n\n space ,measured in cubic units, occupied or contained by an object</item>
+        <item>Definition:\n\n the study of the structure of molecules by means of computer technology and X-rays, which are special sensors that analyze patterns of X-ray scattering. </item>
+        <item>Definition:\n\n in plants, vascular tissue that conducts water and minerals from the roots to the leaves</item>
+    </string-array>
+
+    <string-array name="bio_quiz">
+        <item>Definition:\n\n using energy from ATP, the movement of molecules or ions against a concentration gradient across a membrane </item>
+        <item>Definition:\n\n the tendency of unlike molecules to stick together</item>
+        <item>Definition:\n\n in the developing plant, it is the area of cells facing away from the light source so that each elongate in a phototropic response</item>
+        <item>Definition:\n\n the type of plant hormone responsible for promoting cell growth or elongation</item>
+        <item>Definition:\n\n it is by which the surface of a liquid has the ability to cling to the surface of a solid, leading the liquid to move along that solid</item>
+        <item>Definition:\n\n an organisms’ major energy source; sugar and related molecules formed by carbon, hydrogen, and oxygen atoms in a specific ratio</item>
+        <item>Definition:\n\n binding to a specific molecule and transporting it through the membrane, ___________ are proteins present in a cell membrane</item>
+        <item>Definition:\n\n in a multicellular organism, the ability of cells to interact with each other and to influence each other’s activity</item>
+        <item>Definition:\n\n a structure that surrounds a cell and regulates the passage of materials between the cell and its environment</item>
+        <item>Definition:\n\n states that all living things are made up of cells, cells are the smallest units of life, and that all cells are produced from pre-existing cells</item>
+        <item>Definition:\n\n a rigid frame that surrounds the cell in plants, bacteria, and some protists; its purpose is to provide strength and support</item>
+        <item>Definition:\n\n the breakdown of glucose molecules to release chemical energy that a cell can use</item>
+        <item>Definition:\n\n found in the cell membrane, a protein that forms a passageway through which specific solutes can pass by diffusion; some channels open and close in response to the binding of specific molecules</item>
+        <item>Definition:\n\n a green pigment that makes photosynthesis possible</item>
+        <item>Definition:\n\n found in plants and some protists, a green organelle that contains chlorophyll and is the site of photosynthesis</item>
+        <item>Definition:\n\n the tendency of molecules of the same kind to stick together</item>
+        <item>Definition:\n\n appearing to control sugar and transport in the phloem, _________ are the type of small phloem cells adjacent to sieve tube cells</item>
+        <item>Definition:\n\n of a particular chemical substance , the difference within a given area between the highest and lowest concentration </item>
+        <item>Definition:\n\n using a combination of many perfectly-focused thin sections, systems that use the light microscope, laser beams, and computers to produce 3D images</item>
+        <item>Definition:\n\n the ability to see differences between structures resulting from the differences in their capacity to absorb light</item>
+        <item>Definition:\n\n within plants, the systems that produce definite responses to specific stimuli</item>
+        <item>Definition:\n\n the conditions that are held constant throughout an experiment</item>
+        <item>Definition:\n\n covering a plant’s leaves and stems, cuticle is a waxy, non-cellular, waterproof coating that covers a plant’s leaves and stems</item>
+        <item>Definition:\n\n a gel-like substance inside the cell membrane that contains nutrients and in which the organelles are suspended</item>
+        <item>Definition:\n\n through a circular flow of the cytoplasm, the distribution of materials within cells </item>
+        <item>Definition:\n\n through semipermeable membranes, the separation of substances in a solution by means of their unequal diffusion</item>
+        <item>Definition:\n\n the spontaneous movement of particles from an area of higher concentration to an area of lower concentration</item>
+        <item>Definition:\n\n a microscope that uses a beam of electrons to produce images of fine detail</item>
+        <item>Definition:\n\n Requiring energy from ATP, _________ is the uptake of particles or molecules by the formation of a vesicle from the cell membrane</item>
+        <item>Definition:\n\n branching from the nuclear envelope, a network of membrane tubes that circulate materials throughout the cell</item>
+        <item>Definition:\n\n the outermost cell layer of plants; also known as, dermal tissue</item>
+        <item>Definition:\n\n a state of balance between opposing actions</item>
+        <item>Definition:\n\n Requiring energy from ATP, __________ is the release of molecules from a vesicle that fuses with the cell membrane in order to export molecules from the cell</item>
+        <item>Definition:\n\n the diffusion of molecules across a membrane through binding to carrier proteins; does not require energy from ATP</item>
+        <item>Definition:\n\n with a given objective lens, an area that can be seen through the microscope </item>
+        <item>Definition:\n\n a description of the arrangement of protein molecules in the fluid double layer of phospholipids that make up the cell membrane</item>
+        <item>Definition:\n\n using the ability of substances to fluoresce in the presence of ultraviolet light, a technique used to localize substances in cells</item>
+        <item>Definition:\n\n within the genetic make-up of an organism , a technique used to locate the position of specific genes </item>
+        <item>Definition:\n\n in response to gravity, directional plant growth; may be positive or negative (also called gravitropism)</item>
+        <item>Definition:\n\n a process that allows cell activities to be studies by attaching the green fluorescent protein (GFP) to particular parts of the cell</item>
+        <item>Definition:\n\n flat stack of membranes that receive, modify, and transport products of the endoplasmic reticulum throughout a cell</item>
+        <item>Definition:\n\n in response to gravity, directional plant growth; may be positive or negative (also called geotropism)</item>
+        <item>Definition:\n\n functions in storage, photosynthesis, and support; parts of the plant body that are not included in the dermal or vascular tissue systems</item>
+        <item>Definition:\n\nspecialized epidermal cell that swells and contracts for the purpose of controlling gas exchange through a stoma in a leaf,</item>
+        <item>Definition:\n\n describes a soft plant stem with little or no woody tissue</item>
+        <item>Definition:\n\n a chemical compounds that travels from its production site in an organism to other sites where it produces an effect</item>
+        <item>Definition:\n\n describes a solution in which there is a higher solute concentration than another solution</item>
+        <item>Definition:\n\n describes a solution in which there is a lower solute concentration than another solution</item>
+        <item>Definition:\n\n describes a solution that has the same solute concentration as another solution</item>
+        <item>Definition:\n\n in the stem of a woody plant, a raised spongy region that allows gas exchange between the atmosphere and the interior of the plant</item>
+        <item>Definition:\n\n an instrument with a system of lenses used for magnification in which the specimen is illuminated by a beam of white light</item>
+        <item>Definition:\n\n fats and oils that are formed of carbon, hydrogen, and oxygen atoms in a specific ration; they are insoluble in water</item>
+        <item>Definition:\n\n fluid-filled sacs surrounded by a phospholipid bilayer which is identical to the cell membrane of human cells</item>
+        <item>Definition:\n\n an organelle that contains enzymes to digest food, destroy bacteria, or break down damage organelles in cells containing a nucleus </item>
+        <item>Definition:\n\n calculated as the product of the magnifying powers of the objective lens and the eyepiece, _________ is an increase in the apparent side of an object</item>
+        <item>Definition:\n\n in an experiment , a condition deliberately changed </item>
+        <item>Definition:\n\n a thin layer of tissue covering a surface or lining of a cavity, space, or organ</item>
+        <item>Definition:\n\n the industrial use of synthetics to mimic the actions of membranes</item>
+        <item>Definition:\n\n containing tissue in which cells divide by mitosis, ______ are the growth region of the plant</item>
+        <item>Definition:\n\n made up of thin-walled cells containing chloroplasts; specialized ground tissue inside a leaf</item>
+        <item>Definition:\n\n for magnifying specimens, an instrument with a lens or system of lenses </item>
+        <item>Definition:\n\n in a eukaryotic cell, organelles that perform cellular respiration </item>
+        <item>Definition:\n\n growth against the gravitational force; also called negative geotropism</item>
+        <item>Definition:\n\n growth away from the light source</item>
+        <item>Definition:\n\n including DNA and RNA, ________ are complex molecules made up of nucleotides</item>
+        <item>Definition:\n\n in cells, an organelle that contains DNA, the genetic material, and directs all cellular activities</item>
+        <item>Definition:\n\n diffusion of water across a selectively permeable membrane</item>
+        <item>Definition:\n\n responsible for photosynthesis; column-shaped mesophyll cells in a plant leaf (palisade tissue cell)</item>
+        <item>Definition:\n\n based on particle composition, attraction and movement, a model established to explain the nature of matter</item>
+        <item>Definition:\n\n the movement of substances along the concentration gradient without the requirement of ATP</item>
+        <item>Definition:\n\n the smooth serous membrane which lines the cavity of the abdomen</item>
+        <item>Definition:\n\n vascular tissue that transports carbohydrates and water from the leaves to other parts of the plant</item>
+        <item>Definition:\n\n forming a cell membrane, a double layer of outward-facing phosphates and inward-facing fatty acids</item>
+        <item>Definition:\n\n a chemical process in which carbon dioxide from the air and water from the soil, in the presence of light energy, produce glucose and oxygen; (“photo” = light; “synthesis” = putting together)</item>
+        <item>Definition:\n\n in response to light, directional plant growth</item>
+        <item>Definition:\n\n due to the outflow of water in a hypertonic environment, the shrinking of the cytoplasm and plasma membrane away from the cell wall</item>
+        <item>Definition:\n\n growth toward the gravitational force; also called positive geotropism</item>
+        <item>Definition:\n\n growth toward the light source</item>
+        <item>Definition:\n\n the ability to do or act; (optics) the degree to which a lens, mirror, or any optical instrument, magnifies; the number of times it multiplies the apparent diameter of an object</item>
+        <item>Definition:\n\n the difference in pressure in two areas that may cause movement of substances</item>
+        <item>Definition:\n\n the explanation of plant nutrient transport from leaves to other parts of the plant, driven by the pressure build-up of hypertonic solution in a leaf phloem</item>
+        <item>Definition:\n\n responsible for many structures and functions, a large molecule formed by amino acids</item>
+        <item>Definition:\n\n in response to a concentration gradient, the relative movement of a particle </item>
+        <item>Definition:\n\n specialized molecules on the surface of the cell to which messenger molecules from other cells can bind</item>
+        <item>Definition:\n\n protein molecules sticking out from cells that allow communication between cells</item>
+        <item>Definition:\n\n the ability to distinguish between two structures that are close together</item>
+        <item>Definition:\n\n through a semi-permeable membrane, the movement of water from a high concentration of solute to a low concentration of solute </item>
+        <item>Definition:\n\n an organelle in cytoplasm that is the site of protein synthesis</item>
+        <item>Definition:\n\n on a plant root, which absorbs water and nutrients, an extension of a specialized dermal cell</item>
+        <item>Definition:\n\n in the xylem in the roots of some plants, the upward force exerted on water</item>
+        <item>Definition:\n\n the plant organ system that includes all tissues located below the ground</item>
+        <item>Definition:\n\n allowing certain particles to pass through it but excluding others</item>
+        <item>Definition:\n\n allows certain particles to pass through while others are excluded</item>
+        <item>Definition:\n\n the plant organ system that includes all tissues located above the ground</item>
+        <item>Definition:\n\n allowing the movement of phloem sap between cells through perforate sides and end walls, sieve tube cells are cylindrical cells lacking nuclei</item>
+        <item>Definition:\n\n cells that receive carbohydrates in plants, according to the pressure-flow theory</item>
+        <item>Definition:\n\n the layer of loosely-spaced mesophyll cells in a leaf, which promote diffusion through the increased distance between cells</item>
+        <item>Definition:\n\n widely held in the 19th century, the idea that life could emerge spontaneously from non-living matter; disproved by Louis Pasteur</item>
+        <item>Definition:\n\n a technique to improve the contrast between structures in cells by the use of stains or colouring agents</item>
+        <item>Definition:\n\n a change in the environment that causes a reaction by the organism</item>
+        <item>Definition:\n\n through the epidermis of a leaf, pores that allow gases to pass</item>
+        <item>Definition:\n\n the total area of external surfaces of an object</item>
+        <item>Definition:\n\n a set of interconnected parts; a system can be classified as open, closed, or isolated</item>
+        <item>Definition:\n\n a stress caused by the action of a pulling force</item>
+        <item>Definition:\n\n group of similar cells that perform a specific function</item>
+        <item>Definition:\n\n a term that relates to the concentration of solute particles in solutions; for example, can be hypertonic, hypotonic, or isotonic</item>
+        <item>Definition:\n\n elements that are required by an organism in small amounts</item>
+        <item>Definition:\n\n through evaporation, the loss of water from leaves </item>
+        <item>Definition:\n\n the tension or pull on water molecules in the xylem due to the evaporation of water through the stomata or lenticels in a plant</item>
+        <item>Definition:\n\n enlarged underground stem that stores food</item>
+        <item>Definition:\n\n firm; plant cells become turgid (firm) when water enters due to a hypotonic surrounding environment</item>
+        <item>Definition:\n\n pressure exerted against a cell wall by the water that has entered the cell through osmosis</item>
+        <item>Definition:\n\n usually large and possibly permanent, membrane-enclosed sac within a cell</item>
+        <item>Definition:\n\n transport tissue that is formed of cells joined into tubes that carry water and nutrients through the body of the plant</item>
+        <item>Definition:\n\n membrane-enclosed sac that transports materials throughout a cell; has a structure similar to a vacuole</item>
+        <item>Definition:\n\n space ,measured in cubic units, occupied or contained by an object</item>
+        <item>Definition:\n\n the study of the structure of molecules by means of computer technology and X-rays, which are special sensors that analyze patterns of X-ray scattering. </item>
+        <item>Definition:\n\n in plants, vascular tissue that conducts water and minerals from the roots to the leaves</item>
+
+    </string-array>
+
+    <string-array name="chem">
+        <item>Definition:\n\n a compound that dissolves in water to form hydrogen ions  and a solution with a pH lower than 7 </item>
+        <item>Definition:\n\n  the shiny elements that are extremely reactive with water which are found in group 1 on the periodic table </item>
+        <item>Definition:\n\n the silvery metals that are found in group 2 on the periodic table</item>
+        <item>Definition:\n\n a homogeneous mixture consisting of 2 or more metals</item>
+        <item>Definition:\n\n a negatively charged ion</item>
+        <item>Definition:\n\n the smallest part of an element that still has the properties of the element</item>
+        <item>Definition:\n\n average molar mass of an element’s atoms</item>
+        <item>Definition:\n\n number of protons in an atom</item>
+        <item>Definition:\n\n number of atoms in 1mol; which is about 6.02 x 10²³</item>
+        <item>Definition:\n\n a compound that dissolves in water to form hydroxide ions and a solution with a pH greater than 7</item>
+        <item>Definition:\n\n a substance that keeps the pH of a solution nearly the same even if a small amount of an acid or a base is added</item>
+        <item>Definition:\n\n a positively charged ion</item>
+        <item>Definition:\n\n a change in which one or more new substances are formed.</item>
+        <item>Definition:\n\n description of a chemical reaction by placing the formulas of the reactants on the left and the formulas of products on the right of an arrow.</item>
+        <item>Definition:\n\n properties that describe the reactivity of a substance</item>
+        <item>Definition:\n\n process that occurs when a substance or substances react to form a different substance or substances</item>
+        <item>Definition:\n\n a heterogeneous mixture in which the suspended substance cannot be easily separated. </item>
+        <item>Definition:\n\n a exothermic reaction that occurs when oxygen quickly reacts with another substance to form a new substance or substances</item>
+        <item>Definition:\n\n a substance formed when two or more chemical elements are chemically bonded together in a specific ratio </item>
+        <item>Definition:\n\n the sharing of molecules in a bond with non-metallic atoms</item>
+        <item>Definition:\n\n an organized array of ions</item>
+        <item>Definition:\n\n a chemical reaction where a compound breaks apart into its individual elements</item>
+        <item>Definition:\n\n a molecule composed of two atoms of the same element (HOBrFNCL)</item>
+        <item>Definition:\n\n a chemical reaction between two ionic compounds in a solution where a precipitate or a gas is often formed and neutralization may occur.</item>
+        <item>Definition:\n\n description of a substance that is able to be stretched into long wires</item>
+        <item>Definition:\n\n a solution that conducts electricity</item>
+        <item>Definition:\n\n negatively charged particles found in the atom that occupy energy levels around the nucleus</item>
+        <item>Definition:\n\n the energy levels in an atom compsoed of electrons</item>
+        <item>Definition:\n\n pure substance that cannot be broken down into another substance</item>
+        <item>Definition:\n\n  a chemical reaction in which energy is absorbed</item>
+        <item>Definition:\n\na region of space surrounding an atom’s nucleus that may be empty or may contain electrons</item>
+        <item>Definition:\n\n a chemical reaction in which energy is released</item>
+        <item>Definition:\n\n vertical column of elements in the periodic table; numbered from 1 to 18.</item>
+        <item>Definition:\n\n a biochemical preservation technique that involves bacteria</item>
+        <item>Definition:\n\n a chemical reaction in which two elements combine to form a compound</item>
+        <item>Definition:\n\n a chemical equation that uses the chemical formulas of reactants and products in a chemical equation to represent a chemical reaction</item>
+        <item>Definition:\n\n vertical column of elements in the periodic table; numbered from 1 to 18.</item>
+        <item>Definition:\n\n the non-metals in group 17 on the periodic table</item>
+        <item>Definition:\n\n mixture in which the different substances can be seen</item>
+        <item>Definition:\n\n mixture in which the different substances cannot be seen</item>
+        <item>Definition:\n\n a chemical reaction where a compound containing hydrogen and carbon combusts in the presence of oxygen gas</item>
+        <item>Definition:\n\n a suggested explanation for observations; a proposed answer to a question being posed</item>
+        <item>Definition:\n\n unreactive with all but the most corrosive of acids</item>
+        <item>Definition:\n\n an electrically charged atom or group of atoms</item>
+        <item>Definition:\n\n a type of bonding formed when electrons are transferred between metals and non-metals</item>
+        <item>Definition:\n\n a compound which is held together by ionic bonds (cation and anion)</item>
+        <item>Definition:\n\n the process by which an atom gains or loses electrons </item>
+        <item>Definition:\n\n an atom of the same element containing a different number of neutrons</item>
+        <item>Definition:\n\n the International Union of Pure and Applied Chemistry (IUPAC) is the body responsible for naming compounds</item>
+        <item>Definition:\n\n this law states that the total mass of the reactants in a chemical reactions always equals the total mass of the products</item>
+        <item>Definition:\n\n litmus (an acid-base indicator) is a chemical derived from lichen. In an acid, blue litmus paper turns red, and in a base, red litmus paper turns blue. In a neutral solution, they don’t change color.</item>
+        <item>Definition:\n\n description of a substance that is able to be beaten or rolled into sheets without crumbling</item>
+        <item>Definition:\n\n a condition that is purposely changed in an experiment</item>
+        <item>Definition:\n\n a number equal to the total number of protons and neutrons in the nucleus of an atom</item>
+        <item>Definition:\n\n an information sheet on a hazardous product used in workplaces and schools</item>
+        <item>Definition:\n\n a mixture in which the different substances are visible</item>
+        <item>Definition:\n\n an element with properties both of metals and non-metals</item>
+        <item>Definition:\n\n the branch of science and technology concerned with the properties of metals and their production and purification</item>
+        <item>Definition:\n\n shiny , malleable, ductile elements</item>
+        <item>Definition:\n\n the mass of one mole of a substance</item>
+        <item>Definition:\n\n a quantity that chemists use to measure elements and compounds; the symbol is:\n\n mol</item>
+        <item>Definition:\n\n  a compound which is held together by covalent bonds</item>
+        <item>Definition:\n\n an element that forms molecules made up only its own atoms</item>
+        <item>Definition:\n\n a group of non-metallic atoms bound together by covalent bonds</item>
+        <item>Definition:\n\n an element with more than one stable ion</item>
+        <item>Definition:\n\n the description of a substance that is neither acidic or basic, so it has a solution with a pH of 7 at room temperature</item>
+        <item>Definition:\n\n a process in which acids and bases react with each other to form water and salt</item>
+        <item>Definition:\n\n a neutral particle found in the nucleus of an atom</item>
+        <item>Definition:\n\n extremely unreactive non-metals which can be found in group 18 on the periodic table</item>
+        <item>Definition:\n\n one of 17 elements with many diverse properties that are not similar to that of  the metals</item>
+        <item>Definition:\n\n the positively charged center of the atom which is composed of protons and neutrons</item>
+        <item>Definition:\n\n the rule states that atoms bond in such a way that they have eight electrons in its valence energy level</item>
+        <item>Definition:\n\n horizontal line or row on the periodic table which are numbered from 1 to 7</item>
+        <item>Definition:\n\n a measure of the number of hydrogen ions in a solution that indicates how acidic or basic a substance is </item>
+        <item>Definition:\n\n a measure of acidity; most solutions are between 0 and 14 on the pH scale</item>
+        <item>Definition:\n\n  a change to a substance where the composition of the substance remains the same</item>
+        <item>Definition:\n\n the properties that are used to describe the physical appearance and composition of a substance</item>
+        <item>Definition:\n\n the description of an object that has a positive electric charge at one end and a negative charge at the other</item>
+        <item>Definition:\n\n a charged particle that is made up of several non-metallic atoms joined together</item>
+        <item>Definition:\n\n a solid with low solubility that forms a solution</item>
+        <item>Definition:\n\n the process of forming a solid from a solution that occurs in solutions</item>
+        <item>Definition:\n\n the new substance produced in a chemical reaction</item>
+        <item>Definition:\n\n positively charged particles which are found in the nucleus of an atom</item>
+        <item>Definition:\n\n a substance in which all the particles are identical</item>
+        <item>Definition:\n\n a substance that reacts in a chemical reaction to form another substance or substances</item>
+        <item>Definition:\n\n a condition that changes in response to the manipulated variable in an experiment</item>
+        <item>Definition:\n\n a compound that is produced during a neutralization reaction between an acid or a base</item>
+        <item>Definition:\n\n a chemical reaction where a reactive element reacts with an ionic compound</item>
+        <item>Definition:\n\n the formula equation showing the identity of each substance involved in a chemical reaction but is not balanced; basically an unbalanced chemical equation</item>
+        <item>Definition:\n\n the ability to dissolve</item>
+        <item>Definition:\n\n a mixture where the separate components cannot be seen</item>
+        <item>Definition:\n\n a mechanical mixture where the components are in different states</item>
+        <item>Definition:\n\n a mixture of several indicators that change colour as the acidy of a solution changes</item>
+        <item>Definition:\n\n the tendency of an atom to gain or lose electrons</item>
+        <item>Definition:\n\n the electron in the outermost energy level of an atom</item>
+        <item>Definition:\n\n the number of electrons an element can gain or lose to combine with other elements</item>
+        <item>Definition:\n\n a system of  warning symbols on hazardous materials </item>
+    </string-array>
+
+    <string-array name="geology">
+        <item>Definition:\n\n means to convert radiant energy into another form of energy, such as kinetic energy</item>
+        <item>Definition:\n\n any change in the structure or function of an organism that makes it more suited to its environment</item>
+        <item>Definition:\n\n the percent of incoming solar radiation that a surface reflects</item>
+        <item>Definition:\n\n the distance above Earth’s surface; measured from sea level (the surface of Earth’s oceans)</item>
+        <item>Definition:\n\n evidence that relies on reports from people about particular events and their interpretation of these events</item>
+        <item>Definition:\n\n the angle between a ray falling on a surface and the line of the perpendicular to that surface</item>
+        <item>Definition:\n\n 23.5°; the degree to which Earth’s poles are tilted from the perpendicular of the plane of its orbit</item>
+        <item>Definition:\n\n the layer of gases that surround Earth</item>
+        <item>Definition:\n\n solid particles less than 0.66 mm in diameter which are suspended in Earth’s atmosphere</item>
+        <item>Definition:\n\n the pressure exerted by the mass of air above any point on Earth’s surface</item>
+        <item>Definition:\n\n an approach to investigations that benefits from certain traits</item>
+        <item>Definition:\n\n a large geographical region with a particular range of temperature and precipitation levels, and the plants and animals that are adapted to those climate conditions</item>
+        <item>Definition:\n\n a relatively thin layer of Earth that has conditions suitable or supporting life as we know it</item>
+        <item>Definition:\n\n a device used to determine the transfer of thermal energy</item>
+        <item>Definition:\n\n a process of pumping carbon dioxide gas into the ground (or ocean bottom at very deep levels) and storing it in sealed containers</item>
+        <item>Definition:\n\n any process that removes carbon dioxide from the atmosphere; for example, photosynthesis</item>
+        <item>Definition:\n\n any process that releases carbon dioxide to the atmosphere; for example, the burning of fossil fuels</item>
+        <item>Definition:\n\n average weather conditions that occur in a region over a long period of time, usually a minimum of 30 years</item>
+        <item>Definition:\n\n change that occurs in the climate of a region, usually a minimum of 30 years</item>
+        <item>Definition:\n\n presented as a graph , a summary of the average temperature and precipitation for each month of the year for a given location</item>
+        <item>Definition:\n\n any system that exchanges energy with its surroundings but does not exchange matter</item>
+        <item>Definition:\n\n without moving the particles to a new location the transfer of thermal energy by direct contact between the particles of a substance</item>
+        <item>Definition:\n\n the transfer of thermal energy by the movement of particles from one location to another</item>
+        <item>Definition:\n\n caused by the rotation of the Earth, the deflection of any object from a straight line path</item>
+        <item>Definition:\n\n flow from one place to another in one direction</item>
+        <item>Definition:\n\n mass per volume of a substance</item>
+        <item>Definition:\n\n the change in Earth’s net radiation budget, caused by the increase in human–generated greenhouse gases</item>
+        <item>Definition:\n\n one of two points in Earth’s orbit when the number of daylight hours is equal to the number of hours of night</item>
+        <item>Definition:\n\n a band of fast–moving air in the stratosphere</item>
+        <item>Definition:\n\n formed from the remains of living organisms, carbon–based fuels </item>
+        <item>Definition:\n\n a climate model that incorporates the laws of physics to model climate on a global scale</item>
+        <item>Definition:\n\n the observed increase in Earth’s average temperature over time</item>
+        <item>Definition:\n\n gases that contribute to the greenhouse effect</item>
+        <item>Definition:\n\n human–made chemicals that can absorb large quantities of thermal energy</item>
+        <item>Definition:\n\n the amount of energy released when 1 mol of a vapour phase changes to the liquid phase, without a change in temperature</item>
+        <item>Definition:\n\n the amount of energy absorbed when 1 mol of a substance in the solid phase changes to the liquid phase, without a change in temperature</item>
+        <item>Definition:\n\n the amount of energy released when 1 mol a substance in the liquid phase changes to the solid phase, without a change in temperature</item>
+        <item>Definition:\n\n the amount of energy absorbed when 1 mol a substance from liquid phase changes to the gas phase, without a change in temperature</item>
+        <item>Definition:\n\n compounds with similar properties to CFCs, but which destroy ozone much more slowly</item>
+        <item>Definition:\n\n the process by which water molecules move from Earth’s surface into the atmosphere and then back again</item>
+        <item>Definition:\n\n all the water on Earth, whether present as liquid, water vapour, or ice</item>
+        <item>Definition:\n\n the amount of solar energy received by a region of Earth’s surface</item>
+        <item>Definition:\n\n (meteorology) an atmospheric condition in which the air temperature rises with increasing altitude, holding surface air down and preventing dispersion of pollutants.</item>
+        <item>Definition:\n\n solid portion of Earth, composed of rocks, minerals, and elements</item>
+        <item>Definition:\n\n the third atmospheric layer above Earth’s surface</item>
+        <item>Definition:\n\n the absorption of thermal energy by the atmosphere</item>
+        <item>Definition:\n\n the difference between the amount of incoming radiation and outgoing radiation from Earth’s surface and atmosphere</item>
+        <item>Definition:\n\n a system that exchanges both matter and energy with its surroundings</item>
+        <item>Definition:\n\n a molecule made up of three atoms of oxygen</item>
+        <item>Definition:\n\n a layer in the stratosphere containing high levels of ozone gas</item>
+        <item>Definition:\n\n energy that is transmitted as electromagnetic waves</item>
+        <item>Definition:\n\n emission of energy as particles or waves</item>
+        <item>Definition:\n\n change the direction of a ray of radiant energy</item>
+        <item>Definition:\n\n evidence collected in a manner that, as much as possible, ensures it is unbiased and reflects general situations, rather than particular events</item>
+        <item>Definition:\n\n energy from the Sun; generated by a hydrogen–hydrogen nuclear fusion reaction</item>
+        <item>Definition:\n\n one of two points in Earth’s orbit at which the poles are most titled toward or away from the Sun</item>
+        <item>Definition:\n\n amount of energy required to raise the temperature of 1 gram of a substance by 1°C </item>
+        <item>Definition:\n\n atmospheric layer above the troposphere, from 10 to 50 kilometres above Earth’s surface</item>
+        <item>Definition:\n\n the use of the world’s resources in a way that maintains the resources for future generations</item>
+        <item>Definition:\n\n the amount of energy possessed by a substance by virtue of the kinetic energy of its molecules or atoms</item>
+        <item>Definition:\n\n movement of thermal energy from an area of high temperature to an area of low temperature</item>
+        <item>Definition:\n\n furthest layer from Earth’s surface</item>
+        <item>Definition:\n\n layer of atmospheric gases at 0 kilometers to 10 kilometers from Earth’s surface</item>
+        <item>Definition:\n\n conditions of temperature, air pressure, cloud cover, precipitation (rain or snow), and humidity that occur at a particular place at a particular time</item>
+        <item>Definition:\n\n movement of cool air from an area of high atmospheric pressure to an area of low atmosphere pressure</item>
+    </string-array>
+
+    <string-array name="phy">
+        <item>Definition:\n\n during a specific time interval, the change in velocity </item>
+        <item>Definition:\n\n during a specific time, the distance travelled</item>
+        <item>Definition:\n\n energy that is stored in atoms and the bonds between atoms which can be released by various chemical reactions.</item>
+        <item>Definition:\n\n potential energy stored in the chemical bonds of compounds  </item>
+        <item>Definition:\n\n measures the change in distance and the change in direction (position) of an object; a vector quantity</item>
+        <item>Definition:\n\n measures how far an object has travelled; a scalar quantity</item>
+        <item>Definition:\n\n measures how effectively a machine converts input energy into useful output energy; expressed as a ratio</item>
+        <item>Definition:\n\n the energy stored in an object that has its shape changed by compressing, twisting, or stretching</item>
+        <item>Definition:\n\n the energy produced by moving electrons</item>
+        <item>Definition:\n\n the ability to do work</item>
+        <item>Definition:\n\n the process of changing one form of energy to another</item>
+        <item>Definition:\n\n this law states that in a system and its surroundings, the total energy including heat, remains constant </item>
+        <item>Definition:\n\n push or pull applied to an object which is measured in newtons (N)</item>
+        <item>Definition:\n\n a cell that produces an electric current directly from a chemical reaction</item>
+        <item>Definition:\n\n the energy of an object because of its position above the surface of Earth</item>
+        <item>Definition:\n\n the energy transformed from an object at a higher temperature to one at a lower temperature; also called thermal energy</item>
+        <item>Definition:\n\n a device that converts heat into mechanical energy</item>
+        <item>Definition:\n\n the initial thermal energy source</item>
+        <item>Definition:\n\n the thermal energy that is outputted</item>
+        <item>Definition:\n\n a device where by burning fuel inside the engine, energy is released </item>
+        <item>Definition:\n\n the unit used to measure work and energy </item>
+        <item>Definition:\n\n the energy of a moving object</item>
+        <item>Definition:\n\n this law states that energy cannot be created or destroyed; it can only be changed from one form to another; also, the total amount of energy never changes</item>
+        <item>Definition:\n\n anything that has mass and takes up space</item>
+        <item>Definition:\n\n the energy due to the position and motion of an object</item>
+        <item>Definition:\n\n relative to a reference point, the changing in position of an object; basically, an imaginary line joining the object to the reference point changes in length and in direction or both</item>
+        <item>Definition:\n\n the potential energy stored in the nucleus of an atom</item>
+        <item>Definition:\n\n the term given when efficiency is expressed as a percentage (%)</item>
+        <item>Definition:\n\n the energy that has the potential to do work; energy that is stored and held in readiness</item>
+        <item>Definition:\n\n a quantity that indicates only magnitude</item>
+        <item>Definition:\n\n this law states that heat always lows naturally from a hot object to a cold object, never naturally the opposite</item>
+        <item>Definition:\n\n the energy from the sun; generated by a hydrogen-hydrogen nuclear fusion reaction</item>
+        <item>Definition:\n\n everything that is outside of a system</item>
+        <item>Definition:\n\n a set of interconnected parts; a system can be classified as either open, closed, or isolated</item>
+        <item>Definition:\n\n an electrical generating station that uses thermal energy to produce steam to drive turbines </item>
+        <item>Definition:\n\n the study of the interrelationships between heat, work, and energy</item>
+        <item>Definition:\n\n movement at a constant speed in a straight line </item>
+        <item>Definition:\n\n the energy that goes into useful work</item>
+        <item>Definition:\n\n a quantity that indicates direction and magnitude</item>
+        <item>Definition:\n\n the direction and speed of an object</item>
+        <item>Definition:\n\n the energy which is transformed without significant use</item>
+        <item>Definition:\n\n a measure of the transfer of energy from one object to another where the second object moves against an opposing force or the speed of an object increases</item>
+        <item>Definition:\n\n the energy that is supplied to do work on an object</item>
+    </string-array>
+
+
+
+    <string-array name="comp">
+        <item>C++ is a statically typed, compiled, general-purpose, case-sensitive, free-form programming language that supports procedural, object-oriented, and generic programming. C++ is regarded as a middle-level language, as it comprises a combination of both high-level and low-level language features.</item>
+        <item>HTML stands for Hypertext Markup Language, and it is the most widely used language to write Web Pages.</item>
+        <item>Java programming language was originally developed by Sun Microsystems. Java is: Object Oriented, Platform independent, Simple, Secure, Architectural-neutral, Portable, Robust, Multithreaded, Interpreted, High Performance, Distributed, and dynamic.</item>
+        <item>Javascript is a dynamic computer programming language. It is lightweight and most commonly used as a part of web pages, whose implementations allow client-side script to interact with the user and make dynamic pages. It is an interpreted programming language with object-oriented capabilities.</item>
+        <item>Python is a high-level, interpreted, interactive and object-oriented scripting language. Python is designed to be highly readable. It uses English keywords frequently where as other languages use punctuation, and it has fewer syntactical constructions than other languages.</item>
+        <item>SQL is a language of database, it includes database creation, deletion, fetching rows and modifying rows etc. SQL is an ANSI (American National Standards Institute) standard but there are many different versions of the SQL language.</item>
+        <item>Swift is a new programming language developed by Apple Inc for iOS and OS X development. Swift adopts the best of C and Objective-C, without the constraints of C compatibility. Swift uses the same runtime as the existing Obj-C system on Mac OS and iOS which makes Swift programs run on many existing iOS 6 and OS X 10.8 platforms.</item>
+    </string-array>
+
+
+
+    <string-array name="scienceM">
+
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+
+    </string-array>
+
+    <string-array name="math">
+        <item><b>Formula:</b>\nArea = pie(π) × radius²</item>
+        <item><b>Formula:</b>\nArea = base × height</item>
+        <item><b>Formula:</b>\nArea = length × width</item>
+        <item><b>Formula:</b>\nArea = ½ × (a + b)× height</item>
+        <item><b>Formula:</b>\nArea = ½ × base × height</item>
+        <item><b>Definition</b>\nIn order to solve a question with multiple operations (add/subtract, multiply/divide) there is an order to follow often referred to as BEDMAS\nBEDMAS is an acronym that stands for:\nB-brackets\n
+E-exponents\n
+DM-multiply or divide (left to right)\n
+AS-add subtract (left to right)</item>
+        <item><b>Formula:</b>\nCircumference = pie(π) × diameter</item>
+        <item><b>Formula:</b>\nPerimeter = b + b + c + c</item>
+        <item><b>Formula:</b>\nPerimeter = length + length + width + width</item>
+        <item><b>Formula:</b>\nPerimeter = a + b + c + d</item>
+        <item><b>Formula:</b>\nPerimeter = a + b + c</item>
+        <item>Definition\n\n An angle that has measure less than 90°.</item>
+        <item>Definition\n\n A triangle for which all interior angles are acute.</item>
+        <item>Definition\n\n Next to; neighboring.</item>
+        <item>Definition\n\n The angle below horizontal that an observer must look to see an object that is lower than the observer.</item>
+        <item>Definition\n\n The angle above horizontal that an observer must look to see an object that is higher than the observer. </item>
+        <item>Definition\n\n The angle between a line and the x-axis. This angle is always between 0° and 180°, and is measured counterclockwise from the part -of the x-axis to the right of the line.</item>
+        <item>Definition\n\n Two rays sharing a common endpoint. Angles are typically measured in degrees or radians.</item>
+        <item>Definition\n\nIn plane geometry or solid geometry, the bottom of a figure. If the top is parallel to the bottom (as in a trapezoid or prism), both the top and bottom are called bases.</item>
+        <item>Definition\n\nThe plane formed by a horizontal axis and a vertical axis, often labeled the x-axis and y-axis, respectively.</item>
+        <item>Definition\n\nThe highest degree of any term in the polynomial.</item>
+        <item>Definition\n\nThe formula  is the distance between points (x1, y1) and (x2, y2).</item>
+        <item>Definition\n\nA triangle with three congruent sides.</item>
+        <item>Definition\n\nAny mathematical calculation or formula combining numbers and/or variables using sums, differences, products, quotients (including fractions), exponents, roots, logarithms, trig functions, parentheses, brackets, functions, or other mathematical operations. Expressions may not contain the equal sign (=) or any type of inequality.</item>
+        <item>Definition\n\nx in the expression a^x. For example, 3 is the exponent in 2^3.</item>
+        <item>Definition\n\nA ratio of numbers or variables. Fractions may not have denominator 0.</item>
+        <item>Definition\n\nThe largest integer that divides evenly into each of a given set of numbers. </item>
+        <item>Definition\n\nA "number" which indicates a quantity, size, or magnitude that is larger than any real number. The number infinity is written as a sideways eight\n\n ∞. Negative infinity is written –∞.</item>
+        <item>Definition\n\nReal numbers that are not rational.</item>
+        <item>Definition\n\nThe smallest positive integer into which two or more integers divide evenly.</item>
+        <item>Definition\n\nAny number that is the square of a rational number. </item>
+        <item>Definition\n\nA number n for which the sum of all the positive integer factors of n which are less than n add up to n.</item>
+        <item>Definition\n\nA closed plane figure for which all sides are line segments. The name of a polygon describes the number of sides. A polygon which has all sides mutually congruent and all angles mutually congruent is called a regular polygo</item>
+        <item>Definition\n\nThe result of raising a base to an exponent. For example, 8 is a power of 2 since 8 is 2^3.</item>
+        <item>Definition\n\nAn equation relating the lengths of the sides of a right triangle. The sum of the squares of the legs of a right triangle is equal to the square of the hypotenuse.</item>
+        <item>Definition\n\nThe result of dividing one number or expression by another.</item>
+        <item>Definition\n\nA triangle for which all three sides have different lengths.</item>
+        <item>Definition\n\nThe total area of the exterior surface of a solid.</item>
+        <item>Definition\n\nA line that touches a curve at a point without crossing over. Formally, it is a line which intersects a differentiable curve at a point where the slope of the curve equals the slope of the line.</item>
+        <item>Definition\n\nA quantity, drawn as an arrow, with both direction and magnitude.</item>
+        <item>Definition\n\nThe total amount of space enclosed in a solid.</item>
+    </string-array>
+
+    <string-array name="mathM">
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+    </string-array>
+
+    <string-array name="social">
+        <item><b>Definition:</b>\nThe process that occurs when two different cultures come into contact and accept and create space for another.
+</item>
+        <item><b>Definition:</b>\nThe process that occurs when the culture of a minority group is absorbed by majority culture.
+</item>
+        <item><b>Definition:</b>\nPeople’s basic physical needs include food, water, clothing, and shelter, while basic social needs include family and friends, and basic emotional needs include a sense of belonging and to be loved
+</item>
+        <item><b>Definition:</b>\nAn economic system that advocates free trade, competition, and choice as a means of achieve prosperity</item>
+        <item><b>Definition:</b>\nMembership in a political community that brings with it rights to political participation
+</item>
+        <item><b>Examples:</b>\nThe freedom to express your opinion, and the freedom of expression</item>
+        <item><b>Definition:</b>\nThe process of one country establishing settlements in other countries and enforcing its political, cultural, and economical principles</item>
+        <item><b>Definition:</b>\nStrategies to protect and preserve resources</item>
+        <item><b>Definition:</b>\nThe combining of various elements from two different cultures to create a new existing culture</item>
+        <item><b>Definition:</b>\nThe process of attempting to protect, maintain, and promote one’s culture
+</item>
+        <item><b>Definition:</b>\nThe process of reaffirm and promote an individual or collective cultural identity
+</item>
+        <item><b>Examples:</b>\nThe right to participate in the cultural life of a community, and the right to speak your first language
+</item>
+        <item><b>Definition:</b>\nAn idea that the government should “govern with the consent of the governed”; a political system in which the laws apply equally to everyone
+</item>
+        <item><b>Definition:</b>\nThe reduction of a population by human forces or natural forces</item>
+        <item><b>Definition:</b>\nThe gap that separate people who have access to up to date digital technology and people who don’t.
+</item>
+        <item><b>Definition:</b>\nEconomic and social gaps between (among) individuals, communities, or countries
+</item>
+        <item><b>Definition:</b>\nA government policy that forces a group of people to move their home somewhere else
+</item>
+        <item><b>Definition:</b>\nThe many different characteristics among people</item>
+        <item><b>Definition:</b>\nThe amount of land needed to support an individual’s lifestyle (sustain the level of resources a person uses) including the waste he or she produces
+</item>
+        <item><b>Examples:</b>\nThe right to fair wages and safe working conditions
+</item>
+        <item><b>Definition:</b>\nAn idea that one owns worldview is superior to all others and whatever they do is right; centered on one race and culture</item>
+        <item><b>Example:</b>\nThe right to be free of discrimination
+</item>
+        <item><b>Definition:</b>\nAn economy system that advocates free trade and in which the government doesn\'t intervene or intervenes only little in the production of goods or control trade or profit.
+</item>
+        <item><b>Definition:</b>\nWhen two countries eliminate all trade tariffs and barriers and taxes on goods and services traded between them.
+</item>
+        <item><b>Definition:</b>\nThe process that is making the world increasingly connected and interdependent\n
+  Economic: globalization having to do with trade (the transfer of goods) and money\n
+  Social: globalization having to do with the social aspects of our life such as our clothing, communication and culture\n
+  Political: globalization having to do with the government and its actions\n
+  Environmental: how all these globalization have an impact on the environment\n
+</item>
+        <item><b>Definition:</b>\nThe total value of the goods and services that a country produces in a year; used to measure the strength of a country\'s economy.
+</item>
+        <item><b>Definition:</b>\nA period often referred to as starting from 1492, when columbus sailed the ocean blue, and ending after World War II, when the US and the Soviet Union emerged as superpowers
+</item>
+        <item><b>Definition:</b>\nThe erasing of differences or creating sameness</item>
+        <item><b>Definition:</b>\nA crime that occurs when people try to emigrate to other countries for a better future and are usually taken by crime organizations illegally and then are forced to work in substandard conditions or in criminal activities.
+</item>
+        <item><b>Definition:</b>\nThe process of people moving into a new country</item>
+        <item><b>Definition:</b>\nThe process by which a powerful country creates and empire and domination over its colonies’ political, cultural, and economical institutions
+</item>
+        <item><b>Definition:</b>\nA period from 1750-1850, when work became mechanized and production greatly increased; work began to occur in factories and brought dramatic change
+</item>
+        <item><b>Definition:</b>\nThe original inhabitants of a region</item>
+        <item><b>Definition:</b>\nA stage of economic development when the place of production shifts from working at home to large scale factories
+</item>
+        <item><b>Definition:</b>\nAn increase in overall prices; happens when the number of money in circulation increases but how much the money can buy decreases
+</item>
+        <item><b>Definition:</b>\nWhen the minority groups get incorporated in the mainstream society
+</item>
+        <item><b>Definition:</b>\nWhen people are separated from society often with less rights</item>
+        <item><b>Definition:</b>\nThe process by which a country limits trade in its colonies to benefit the imperial country by directly taking the raw resources to create finished goods.
+</item>
+        <item><b>Definition:</b>\nThe global popular culture that results from globalization</item>
+        <item><b>Definition:</b>\nPlacing people in categories according to preconceived beliefs</item>
+        <item><b>Definition:</b>\nThe hiring of one company by another often to fulfil certain tasks in production; many companies do this because the host country where they outsource has less restrictions and they can generate the maximum profit
+</item>
+        <item><b>Definition:</b>\nAn epidemic that spreads to the whole globe and becomes a big risk because it is so much quicker to travel to other places
+</item>
+        <item><b>Examples:</b>\nThe right to vote and participate in government
+</item>
+        <item><b>Definition:</b>\nThe current cultural trends that are spread by mass media</item>
+        <item><b>Definition:</b>\nThe sale of government owned corporations or businesses to private industries; the selling of a public service
+</item>
+        <item><b>Definition:</b>\nThe conditions in people\'s lives
+</item>
+        <item><b>Definition:</b>\nAll matters related to government and religion are separated
+</item>
+        <item><b>Definition:</b>\nWhen people are legally separated from society due to racial, ethnic, or other differences
+</item>
+        <item><b>Definition:</b>\nA trade route between Europe and all the way to China in which many ideas, products, and diseases were exchanged; established the first aspect of economic globalization</item>
+        <item><b>Examples:</b>\nThe right to education and to adequate health care
+</item>
+        <item><b>Definition:</b>\nAccepting responsibility to make sure Earth’s resources are used sustainability (remain sustainable)
+</item>
+        <item><b>Definition:</b>\nIn general, it means living a satisfying life, as an individual and as a community member, that can be maintained into the future</item>
+        <item><b>Definition:</b>\nIdeas and information spread for the purpose of promoting a certain idea or goal that is often extremely biased
+</item>
+        <item><b>Definition:</b>\n A corporation that operates in two or more countries
+</item>
+    </string-array>
+
+
+    <string-array name="socialM">
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+    </string-array>
+
+    <string-array name="provinedescription">
+        <item><b>Definition:</b>\nNot literal, playing with words to create layers of meaning</item>
+        <item><b>Definition:</b>\nRepeated letter sounds\n\n<b>Example:</b>\n“Dark dreary day”</item>
+        <item><b>Definition:</b>\nGiving human qualities to non-living objects\n\n<b>Example:</b>\n“the moon nodded in our direction”; moons don’t have necks and they can’t knowingly nod at us</item>
+        <item><b>Definition:</b>\nA direct comparison using “like” or “as”\n\n<b>Example:</b>\n“sneaky as a fox” or “he eats like a pig”;
+               comparing the man’s sloppy eating habits to a messy barnyard animal</item>
+        <item><b>Definition:</b>\nA comparison without the use  of “like” or “as”\n\n<b>Example:</b>\n“The relationship she is in is a prison.”</item>
+        <item><b>Definition:</b>\nRhyming words within a line\n\n<b>Example:</b>\nFrom Edgar Allan Poe’s “The Raven”;\n “Ah. distinctly I remember, it was in the bleak December”</item>
+        <item><b>Definition:</b>\nRhymes are at the ends of the lines. If the two lines, one after the other, rhyme, they become a couplet\n\n<b>Example:</b>\n‘No tall oak trees; search the fields in vain;
+              only empty skylines and the cold, grey rain.’</item>
+        <item><b>Definition:</b>\nSound words; the words are spelled the way they sound.\n\n<b>Example:</b>\nSnap! Crackle Pop!</item>
+        <item><b>Definition:</b>\nAn obvious and extreme exaggeration\n\n<b>Example:</b>\n“I’m so hungry, I could eat an elephant.”</item>
+        <item><b>Definition:</b>\nTwo opposite words side by side\n\n<b>Example:</b>\n“old news” or “exact estimate” or “same difference” </item>
+        <item><b>Definition:</b>\nA figure of speech specific to the English language that and cannot be taken word for word\n\n<b>Example:</b>\n“raining cats and dogs”</item>
+        <item><b>Definition:</b>\nA deliberate homonym confusion to make a joke\n\n<b>Example:</b>\n“A horse is a very stable animal.”</item>
+        <item><b>Definition:</b>\nPlacing opposites side by side(or near one another) to highlight their differencesCan be words, symbols, or pictures\n\n<b>Example:</b>\ntall person next to a short person</item>
+        <item><b>Definition:</b>\nUsing symbolic images and indirect suggestion to express mystical ideas, emotions, and states of mind.</item>
+        <item><b>Definition:</b>\nThe chunk, or division, of a poem</item>
+        <item><b>Definition:</b>\nTwo lines with the same(or similar) rhythm(beat) and they share an external rhyme\n\n<b>Example:</b>\n“But I have promises to keep
+              and miles to go before I sleep”</item>
+        <item><b>Definition:</b>\nA statement with two opposite ideas, but both are true (a paradoxical statement)\n\n<b>Examples:</b>\n
+
+              “It was the best of times; it was the worst of times.”\n
+
+              “They fight so much—they make a great couple.”\n
+
+              The more things change, the more they stay the same.</item>
+        <item><b>Definition:</b>\nSlang, or informal, language.\n\n<b>Example:</b>\nHomie, peeps, cuz, ain’t, gotta, gonna, haz, etc… </item>
+        <item><b>Definition:</b>\nAn overused expression or image—so overused that it no longer holds meaning or appeal for the listener/viewer\n\n<b>Examples:</b>\n
+
+              ‘There are plenty of fish in the sea.’\n
+
+              ‘What doesn’t kill you makes you stronger.’\n
+
+              A typical horror movie scene. </item>
+        <item><b>Definition:</b>\nThe reader’s or viewer’s expectations are contradicted; the protagonist’s expectations can also be contradicted</item>
+        <item><b>Definition:</b>\nThe beat or tempo from the
+              syllables in the poem</item>
+        <item><b>Definition:</b>\nRepeating a word or entire line for effect and for emphasis\n\n<b>Example:</b>\n
+              “and miles to go before I sleep,\n
+               and miles to go before I sleep.”</item>
+        <item><b>Definition:</b>\nIn society, some topics are difficult for people to discuss, so they invented “lighter” ways to discuss the issues.\n\n<b>Example:</b>\ninstead of saying ‘He died,” we might say, “He’s passed on to a better place.”</item>
+        <item><b>Definition:</b>\nUnderstanding the background of the author—the social, historical, and personal context.</item>
+        <item><b>Definition:</b>\nA humorous and mocking work that imitates a famous text, person, or event—the jab is quite obvious.</item>
+        <item><b>Definition:</b>\nSatire is like parody, but more critical, and usually more subtle—often used in politics or to reveal others’ shortcomings.</item>
+    </string-array>
+
+    <string-array name="la_quiz">
+        <item><b>Definition:</b>\nNot literal, playing with words to create layers of meaning</item>
+        <item><b>Definition:</b>\nRepeated letter sounds</item>
+        <item><b>Definition:</b>\nGiving human qualities to non-living objects</item>
+        <item><b>Definition:</b>\nA direct comparison using “like” or “as”</item>
+        <item><b>Definition:</b>\nA comparison without the use  of “like” or “as”</item>
+        <item><b>Definition:</b>\nRhyming words within a line</item>
+        <item><b>Definition:</b>\nRhymes are at the ends of the lines.</item>
+        <item><b>Definition:</b>\nSound words; the words are spelled the way they sound.</item>
+        <item><b>Definition:</b>\nAn obvious and extreme exaggeration</item>
+        <item><b>Definition:</b>\nTwo opposite words side by side</item>
+        <item><b>Definition:</b>\nA figure of speech specific to the English language that and cannot be taken word for word</item>
+        <item><b>Definition:</b>\nA deliberate homonym confusion to make a joke</item>
+        <item><b>Definition:</b>\nPlacing opposites side by side(or near one another) to highlight their differences</item>
+        <item><b>Definition:</b>\nUsing symbolic images and indirect suggestion to express mystical ideas, emotions, and states of mind.</item>
+        <item><b>Definition:</b>\nThe chunk, or division, of a poem</item>
+        <item><b>Definition:</b>\nTwo lines with the same(or similar) rhythm(beat) and they share an external rhyme</item>
+        <item><b>Definition:</b>\nA statement with two opposite ideas, but both are true</item>
+        <item><b>Definition:</b>\nSlang, or informal, language.</item>
+        <item><b>Definition:</b>\nAn overused expression or image—so overused that it no longer holds meaning or appeal for the listener/viewer</item>
+        <item><b>Definition:</b>\nThe reader’s or viewer’s expectations are contradicted; the protagonist’s expectations can also be contradicted</item>
+        <item><b>Definition:</b>\nThe beat or tempo from the syllables in the poem</item>
+        <item><b>Definition:</b>\nRepeating a word or entire line for effect and for emphasis</item>
+        <item><b>Definition:</b>\nIn society, some topics are difficult for people to discuss, so they invented “lighter” ways to discuss the issues.</item>
+        <item><b>Definition:</b>\nUnderstanding the background of the author—the social, historical, and personal.</item>
+        <item><b>Definition:</b>\nA humorous and mocking work that imitates a famous text, person, or event—the jab is quite obvious.</item>
+        <item><b>Definition:</b>\nLike a parody, but more critical, and usually more subtle—often used in politics or to reveal others’ shortcomings.</item>
+    </string-array>
+    <string-array name="dialomessage">
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+        <item>Coming Soon!</item>
+    </string-array>
+
+    <string name="title_activity_detail">detailActivity</string>
+    <string name="title_activity_listheader">listheader</string>
+    <string name="title_activity_splash">SplashActivity</string>
+
+</resources>

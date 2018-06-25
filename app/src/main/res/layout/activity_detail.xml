@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#F0F0F0">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        >
+
+
+        <TextView
+            android:id="@+id/tvTitleLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medium Text"
+            android:gravity="center"
+            android:textSize="40dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rounded_edges"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:focusableInTouchMode="false" />
+
+        <ImageView
+            android:id="@+id/ivPrvImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+
+            android:src="@drawable/poet1"
+            android:layout_below="@+id/tvTitleLabel"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/tvDescLabel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/ivPrvImage"
+            android:textSize="27dp"
+            android:layout_gravity="fill_horizontal"
+            android:layout_marginLeft="5dp"
+            android:text="Text View" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentLeft="true"
+            android:padding="10dp"
+            android:layout_below="@+id/tvDescLabel"
+            android:text="Button"
+            android:background="@drawable/roundbtn"
+            android:textColor="#ffffff"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:enabled="true" />
+
+        <ImageButton
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:id="@+id/imageButton"
+            android:layout_marginRight="10dp"
+            android:gravity="right"
+            android:background="@drawable/sound"
+            android:layout_below="@id/button1"
+
+            android:layout_alignEnd="@+id/tvDescLabel" />
+
+
+    </RelativeLayout>
+
+</ScrollView>

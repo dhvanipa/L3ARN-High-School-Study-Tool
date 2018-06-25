@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="Settings">
+
+        <CheckBoxPreference
+            android:widgetLayout="@layout/custom_chexbox"
+            android:key="checkbox_preference"
+            android:title="Mute Volume"
+            android:summary="Mutes all the volume!"
+            >
+            </CheckBoxPreference>
+
+
+        </PreferenceCategory>
+a
+    <PreferenceCategory
+        android:title="Other">
+
+        <Preference
+            android:key="feedback_preference"
+            android:title="Send Feedback"
+            android:summary="Suggestion? Praise? Complain? Send it to us!">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:targetPackage="com.letap.learnjava.poetryterms"
+                android:targetClass="com.letap.learnjava.poetryterms.FormActivity" />
+        </Preference>
+
+
+        <Preference
+            android:key="rate_preference"
+            android:title="Rate This App"
+            android:summary="Help us out by rating L3ARN!">
+        </Preference>
+
+        <Preference
+            android:key="about_preference"
+            android:title="Thanks for your support!"
+            android:summary="- Encrypt Productions">
+
+        </Preference>
+
+
+        </PreferenceCategory>
+
+
+</PreferenceScreen>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#FFF8E0">
+
+
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/speakIcon"
+        android:layout_marginTop="3dp"
+        android:layout_toEndOf="@+id/textViewPoints"
+        android:layout_marginStart="22dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/sound"/>
+
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/questionIcon"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/question"/>
+
+    <TextView
+        android:id="@+id/textViewPoints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="7 / 10"
+        android:layout_marginLeft="6dp"
+        android:layout_toRightOf="@+id/questionIcon"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="3dp"
+        android:id="@+id/timeIcon"
+        android:layout_marginRight="3dp"
+        android:layout_toLeftOf="@+id/textViewTime"
+        android:background="@drawable/timer"/>
+
+    <TextView
+        android:id="@+id/textViewTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:text="00:00:00"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/buttonstandard"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_above="@id/button4"
+        android:background="@drawable/buttonstandard"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_above="@id/button3"
+        android:background="@drawable/buttonstandard"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_above="@id/button2"
+        android:background="@drawable/buttonstandard"
+        android:textColor="#000000" />
+
+    <ScrollView
+        android:id="@+id/SCROLLER_ID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/button1"
+        android:layout_below="@id/textViewPoints"
+        android:scrollbars="vertical"
+        android:fillViewport="true">
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/button1"
+        android:layout_below="@id/textViewPoints"
+        android:contentDescription=""
+        android:text=""
+        android:cropToPadding="true"
+        android:layout_weight="1.0"
+        android:textSize="23dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:scaleType="center" />
+
+
+    </ScrollView>
+
+</RelativeLayout>

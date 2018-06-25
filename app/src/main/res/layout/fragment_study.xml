@@ -1,0 +1,41 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="#f2e5ff">
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.letap.learnjava.poetryterms.CircleButton
+            android:id="@+id/study"
+            android:layout_width="137dp"
+            android:layout_height="137dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="8dip"
+            android:src="@drawable/ic_action_tick"
+            app:cb_color="#99CC00" />
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Start Studying"
+        android:id="@+id/textView5"
+        android:textSize="40dp"
+        android:gravity="center"
+        android:layout_marginTop="80dp"
+        android:textColor="@color/material_deep_teal_500"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal|top" />
+</FrameLayout>

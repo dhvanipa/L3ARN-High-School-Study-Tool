@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.letap.learnjava.poetryterms" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".AppController"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        >
+        <activity
+            android:name=".SplashScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".WelcomeActivity" android:label="L3ARN" android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"></activity>
+
+        <activity android:name=".MainActivity" android:label="@string/app_name"  android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"></activity>
+
+        <activity
+            android:name=".detailActivity"
+            android:label="@string/title_activity_detail"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen">
+        </activity>
+        <activity
+            android:name=".listheader"
+            android:label="@string/title_activity_listheader"
+            android:screenOrientation="portrait"
+            >
+        </activity>
+
+        <activity android:name="FormActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar">
+
+
+        </activity>
+
+        <activity android:name=".LAQuiz"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name=".StudyActivity"
+            android:theme="@style/MyMaterialTheme"
+            android:label="Study"
+            >
+
+        </activity>
+
+        <activity android:name=".FlashcardDetail"
+            android:label="Flashcards"
+            android:screenOrientation="landscape"
+            >
+
+        </activity>
+
+    </application>
+
+</manifest>
