@@ -1,9 +1,6 @@
 package com.letap.learnjava.poetryterms;
 
 
-import android.animation.Animator;
-import android.animation.AnimatorListenerAdapter;
-import android.animation.ObjectAnimator;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Fragment;
@@ -12,21 +9,14 @@ import android.content.DialogInterface;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.content.res.TypedArray;
-import android.graphics.Point;
-import android.media.MediaPlayer;
 import android.os.Bundle;
-import android.support.design.widget.Snackbar;
 import android.support.v4.app.ActionBarDrawerToggle;
 import android.support.v4.widget.DrawerLayout;
 import android.util.Log;
-import android.view.Display;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
-import android.view.animation.AccelerateInterpolator;
 import android.widget.AdapterView;
-import android.widget.ImageView;
 import android.widget.ListView;
 
 import java.util.ArrayList;

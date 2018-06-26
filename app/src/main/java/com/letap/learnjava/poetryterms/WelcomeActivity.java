@@ -8,7 +8,6 @@ import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
 import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -40,7 +39,7 @@ public class WelcomeActivity extends Activity {
         setContentView(R.layout.activity_welcome);
 
 
-        // Checking for first time launch - before calling setContentView()
+        // Checking for first time launch; if its not their first time, then skip the MainActivity
         prefManager = new PrefManager(this);
         if (!prefManager.isFirstTimeLaunch()) {
             launchHomeScreen();

@@ -24,10 +24,12 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ListView;
 
+import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.VolleyLog;
 import com.android.volley.toolbox.JsonArrayRequest;
+import com.android.volley.toolbox.Volley;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -56,7 +58,7 @@ public class FindPeopleFragment extends Fragment implements SwipeRefreshLayout.O
     private static final String TAG = MainActivity.class.getSimpleName();
 
     // Movies json url
-    private static final String url = "http://www.encryptproduction.weebly.com/files/theme/math.json";
+    private static final String url = "https://l3arn-92fe6.firebaseapp.com/math.json";
     // private ProgressDialog pDialog;
     private List<Movie> movieList = new ArrayList<Movie>();
     private ListView listView;
@@ -253,7 +255,7 @@ public class FindPeopleFragment extends Fragment implements SwipeRefreshLayout.O
                     public void onResponse(JSONArray response) {
                         Log.d(TAG, response.toString());
                         //    hidePDialog();
-
+                        System.out.println(response.length());
                         // Parsing json
                         for (int i = 0; i < response.length(); i++) {
                             try {
@@ -264,7 +266,9 @@ public class FindPeopleFragment extends Fragment implements SwipeRefreshLayout.O
                                 movie.setThumbnailUrl(obj.getString("image"));
                                 movie.setDesc(obj.getString("desc"));
 
-
+                                System.out.println("------------------");
+                                System.out.println(movie.getTitle());
+                                System.out.println("------------------");
 
                                 // movie.setRating(((Number) obj.get("rating"))
                                 //    .doubleValue());
@@ -279,12 +283,12 @@ public class FindPeopleFragment extends Fragment implements SwipeRefreshLayout.O
                                 //movie.setGenre(genre);
 
                                 // adding movie to movies array
-                                System.out.println(movie.getThumbnailUrl());
+                                // System.out.println(movie.getThumbnailUrl());
                                 if(movieList.size() <= 0){
                                     newItem = true;
-                                    new AsyncCaller(movie.getTitle(), movie.getThumbnailUrl()).execute().get();
-                                    movie.setThumbnailUrl(path);
-                                    System.out.println(path);
+                                   // new AsyncCaller(movie.getTitle(), movie.getThumbnailUrl()).execute().get();
+                                   // movie.setThumbnailUrl(path);
+                                  //  System.out.println(path);
                                     db.addContact(movie, DatabaseHandler.TABLE_MATH);
                                 }
                                 else {
@@ -304,8 +308,8 @@ public class FindPeopleFragment extends Fragment implements SwipeRefreshLayout.O
                                     }
                                     if(contains == false) {
                                         newItem = true;
-                                        new AsyncCaller(movie.getTitle(), movie.getThumbnailUrl()).execute();
-                                        movie.setThumbnailUrl(path);
+                                      //  new AsyncCaller(movie.getTitle(), movie.getThumbnailUrl()).execute();
+                                      //  movie.setThumbnailUrl(path);
                                         db.addContact(movie, DatabaseHandler.TABLE_MATH);
                                     }
                                 }
@@ -327,10 +331,6 @@ public class FindPeopleFragment extends Fragment implements SwipeRefreshLayout.O
 
 
                             } catch (JSONException e) {
-                                e.printStackTrace();
-                            } catch (InterruptedException e) {
-                                e.printStackTrace();
-                            } catch (ExecutionException e) {
                                 e.printStackTrace();
                             }
 
@@ -390,8 +390,9 @@ public class FindPeopleFragment extends Fragment implements SwipeRefreshLayout.O
         });
 
         // Adding request to request queue
-        AppController.getInstance().addToRequestQueue(movieReq);
-
+       //  AppController.getInstance().addToRequestQueue(movieReq);
+        RequestQueue requestQueue = Volley.newRequestQueue(getActivity().getApplicationContext());
+        requestQueue.add(movieReq);
 
     }
 

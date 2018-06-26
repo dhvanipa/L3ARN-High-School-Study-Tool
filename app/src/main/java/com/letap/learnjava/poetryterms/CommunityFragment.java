@@ -55,7 +55,7 @@ public class CommunityFragment extends Fragment implements SwipeRefreshLayout.On
     private static final String TAG = MainActivity.class.getSimpleName();
 
     // Movies json url
-    private static final String url = "https://sites.google.com/site/letapencrypt/home/files/social.json";
+    private static final String url = "https://l3arn-92fe6.firebaseapp.com/social.json";
     // private ProgressDialog pDialog;
     private List<Movie> movieList = new ArrayList<Movie>();
     private ListView listView;
@@ -78,6 +78,8 @@ public class CommunityFragment extends Fragment implements SwipeRefreshLayout.On
 
     // Search EditText
     EditText inputSearch;
+
+    int count = 0;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -201,7 +203,7 @@ public class CommunityFragment extends Fragment implements SwipeRefreshLayout.On
 
                 //retrieve content for the dialog
                 String[] dialogmessage = getResources().getStringArray(R.array.socialM);
-                final String dialogmsg = dialogmessage[fIndex];
+                final String dialogmsg = "Coming Soon!";
 
 
                 Intent intent = new Intent(getActivity().getApplicationContext(), detailActivity.class);
@@ -248,6 +250,8 @@ public class CommunityFragment extends Fragment implements SwipeRefreshLayout.On
                     @Override
                     public void onResponse(JSONArray response) {
                         Log.d(TAG, response.toString());
+                        System.out.println(response.toString());
+                        System.out.println(response.length());
                         //    hidePDialog();
 
                         // Parsing json
@@ -259,7 +263,9 @@ public class CommunityFragment extends Fragment implements SwipeRefreshLayout.On
                                 movie.setTitle(obj.getString("title"));
                                 movie.setThumbnailUrl(obj.getString("image"));
                                 movie.setDesc(obj.getString("desc"));
-
+                                System.out.println("------------------");
+                                System.out.println(movie.getTitle());
+                                System.out.println("------------------");
 
 
                                 // movie.setRating(((Number) obj.get("rating"))
@@ -278,9 +284,9 @@ public class CommunityFragment extends Fragment implements SwipeRefreshLayout.On
                                 System.out.println(movie.getThumbnailUrl());
                                 if(movieList.size() <= 0){
                                     newItem = true;
-                                    new AsyncCaller(movie.getTitle(), movie.getThumbnailUrl()).execute().get();
-                                    movie.setThumbnailUrl(path);
-                                    System.out.println(path);
+                                  //  new AsyncCaller(movie.getTitle(), movie.getThumbnailUrl()).execute().get();
+                                   // movie.setThumbnailUrl(path);
+                                   // System.out.println(path);
                                     db.addContact(movie, DatabaseHandler.TABLE_SOCIAL);
                                 }
                                 else {
@@ -289,19 +295,21 @@ public class CommunityFragment extends Fragment implements SwipeRefreshLayout.On
                                         String image = movieList.get(j).getThumbnailUrl();
                                         String desc = movieList.get(j).getDesc();
 
-
+                                      //  System.out.println(title);
+                                      //  System.out.println(movie.getTitle());
                                         if (title.equals(movie.getTitle())) {
                                             contains = true;
-                                            System.out.print("H");
+                                           // System.out.print("H");
                                             break;
                                         } else {
+                                          //  System.out.println("Nu");
                                             contains = false;
                                         }
                                     }
                                     if(contains == false) {
                                         newItem = true;
-                                        new AsyncCaller(movie.getTitle(), movie.getThumbnailUrl()).execute();
-                                        movie.setThumbnailUrl(path);
+                                     //   new AsyncCaller(movie.getTitle(), movie.getThumbnailUrl()).execute();
+                                      //  movie.setThumbnailUrl(path);
                                         db.addContact(movie, DatabaseHandler.TABLE_SOCIAL);
                                     }
                                 }
@@ -323,10 +331,6 @@ public class CommunityFragment extends Fragment implements SwipeRefreshLayout.On
 
 
                             } catch (JSONException e) {
-                                e.printStackTrace();
-                            } catch (InterruptedException e) {
-                                e.printStackTrace();
-                            } catch (ExecutionException e) {
                                 e.printStackTrace();
                             }
 
@@ -385,7 +389,8 @@ public class CommunityFragment extends Fragment implements SwipeRefreshLayout.On
         });
 
         // Adding request to request queue
-        AppController.getInstance().addToRequestQueue(movieReq);
+
+        AppController.getInstance().addToRequestQueue(movieReq, "new" + count);
 
 
     }
@@ -489,7 +494,7 @@ public class CommunityFragment extends Fragment implements SwipeRefreshLayout.On
     @Override
     public void onRefresh() {
 
-
+        count++;
         fetchMovies();
     }
 

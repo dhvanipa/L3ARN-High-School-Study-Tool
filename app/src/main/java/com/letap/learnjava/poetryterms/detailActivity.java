@@ -13,6 +13,8 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
+
 import java.io.File;
 import java.util.Locale;
 
@@ -50,7 +52,12 @@ public class detailActivity extends Activity {
             dialoginformation = extras.getString("dialogmsg");
 
                 image = extras.getString("prvImg");
+                System.out.println(image);
+            System.out.println("HI HIHIHIHHIHIHIHI");
 
+            Glide.with(this).load(image).into(ivPrImage);
+
+            /*
                 File newFile = new File(image);
 
                 if (newFile.exists()) {
@@ -58,6 +65,7 @@ public class detailActivity extends Activity {
                     Bitmap bitmap = BitmapFactory.decodeFile(newFile.getAbsolutePath());
                     ivPrImage.setImageBitmap(bitmap);
                 }
+                */
                 //System.out.println(m.getThumbnailUrl());
 
 

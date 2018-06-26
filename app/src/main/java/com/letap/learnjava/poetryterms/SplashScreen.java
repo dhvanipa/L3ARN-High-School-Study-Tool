@@ -8,11 +8,7 @@ import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Environment;
-import android.support.v4.widget.SwipeRefreshLayout;
 import android.util.Log;
-import android.widget.ArrayAdapter;
-import android.widget.EditText;
-import android.widget.ListView;
 
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
@@ -29,72 +25,62 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Random;
 import java.util.concurrent.ExecutionException;
-
-import mehdi.sakout.dynamicbox.DynamicBox;
+import java.util.concurrent.TimeUnit;
 
 /**
  * Created by dhvani on 2016-06-21.
  */
 public class SplashScreen extends Activity {
 
+    // Tag for identifying class
     private static final String TAG = MainActivity.class.getSimpleName();
 
-    // Movies json url
-    private static final String url_social = "https://sites.google.com/site/letapencrypt/home/files/social.json";
-    private static final String url_math = "https://sites.google.com/site/letapencrypt/home/files/math.json";
-    private static final String url_poet = "https://sites.google.com/site/letapencrypt/home/files/poet.json";
-    private static final String url_bio = "https://sites.google.com/site/letapencrypt/home/files/bio.json";
-    private static final String url_chem = "https://sites.google.com/site/letapencrypt/home/files/chem.json";
-    private static final String url_phy = "https://sites.google.com/site/letapencrypt/home/files/phy.json";
-    private static final String url_geo = "https://sites.google.com/site/letapencrypt/home/files/geo.json";
-    private static final String url_compsci = "https://sites.google.com/site/letapencrypt/home/files/compsci.json";
-    int numDone = 0;
+    // Section urls to grab the json with all the data
+    private static final String url_social = "https://l3arn-92fe6.firebaseapp.com/social.json";
+    private static final String url_math = "https://l3arn-92fe6.firebaseapp.com/math.json";
+    private static final String url_poet = "https://l3arn-92fe6.firebaseapp.com/poet.json";
+    private static final String url_bio = "https://l3arn-92fe6.firebaseapp.com/bio.json";
+    private static final String url_chem = "https://l3arn-92fe6.firebaseapp.com/chem.json";
+    private static final String url_phy = "https://l3arn-92fe6.firebaseapp.com/phy.json";
+    private static final String url_geo = "https://l3arn-92fe6.firebaseapp.com/geo.json";
+    private static final String url_compsci = "https://l3arn-92fe6.firebaseapp.com/compsci.json";
 
+   // Other variables
+    int numDone = 0;
     private DatabaseHandler db;
     String path;
     private PrefManager prefManager;
-    // DynamicBox box;
     private ProgressDialog pDialog;
-    // private MyProgressDialog dialog;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-       setContentView(R.layout.activity_splash);
+        setContentView(R.layout.activity_splash);
 
-        // Checking for first time launch - before calling setContentView()
         prefManager = new PrefManager(this);
+        launchHomeScreen();
+
+        /*
+        // Checking for first time launch
+
         if (!prefManager.isFirstTimeLaunch()) {
             launchHomeScreen();
             finish();
         }
 
-
-      // box = new DynamicBox(this,R.layout.activity_splash);
-
-        // box.setLoadingMessage("Loading content for the first time...");
-        // box.setOtherExceptionTitle("Error");
-        // box.setOtherExceptionMessage("An error has occurred while fetching data, please try again ...");
-
-
-
-      //  box.showLoadingLayout();
+        // Following code will execute if not the first time
 
         db = new DatabaseHandler(this);
         pDialog = new ProgressDialog(this);
-        pDialog.setMessage("Loading content for the first time...");
-       pDialog.show();
-
-      //  pDialog.setCanceledOnTouchOutside(false);
-        // box.showLoadingLayout();
+        pDialog.setCancelable(false);
+        pDialog.setMessage("Loading social content for the first time...");
+        fetchSocial();
 
 
-        new PrefetchSocialData(this).execute();
+        //new PrefetchSocialData(this).execute();
+        */
 
     }
 
@@ -115,8 +101,8 @@ public class SplashScreen extends Activity {
         protected void onPreExecute() {
             super.onPreExecute();
             // before making http calls
-            dialog.setMessage("Loading Social...");
-            dialog.show();
+            pDialog.setMessage("Loading Social...");
+           // dialog.show();
         }
 
         @Override
@@ -131,6 +117,7 @@ public class SplashScreen extends Activity {
              * 4. Sending device information to server
              * 5. etc.,
              */
+            System.out.println("OK HERE");
            fetchSocial();
 
             return null;
@@ -142,7 +129,8 @@ public class SplashScreen extends Activity {
             if(dialog.isShowing()){
                 dialog.dismiss();
             }
-            new PrefetchMathData(activity).execute();
+            System.out.println("YAY DONE");
+            // new PrefetchMathData(activity).execute();
         }
 
     }
@@ -525,6 +513,7 @@ public class SplashScreen extends Activity {
 
     private void fetchSocial(){
 
+        pDialog.show();
         // Creating volley request obj
        // pDialog = new ProgressDialog(this);
         // Showing progress dialog before making http request
@@ -534,14 +523,16 @@ public class SplashScreen extends Activity {
     //    if(!pDialog.isShowing()){
       //      pDialog.show();
        // }
-        HttpURLConnection.setFollowRedirects(true);
+        System.out.println("social");
+        // HttpURLConnection.setFollowRedirects(true);
         JsonArrayRequest movieReq = new JsonArrayRequest(url_social,
                 new Response.Listener<JSONArray>() {
                     @Override
                     public void onResponse(JSONArray response) {
+                        System.out.println("bruhh");
                         Log.d(TAG, response.toString());
                        // hidePDialog();
-
+                        System.out.println("bruh");
                         // Parsing json
                         for (int i = 0; i < response.length(); i++) {
                             try {
@@ -552,17 +543,21 @@ public class SplashScreen extends Activity {
                                 movie.setThumbnailUrl(obj.getString("image"));
                                 movie.setDesc(obj.getString("desc"));
 
+                                System.out.println("before" + path);
                                 new AsyncCaller(movie.getTitle(), movie.getThumbnailUrl()).execute().get();
+                                System.out.println("after" + path);
                                 movie.setThumbnailUrl(path);
                                 db.addContact(movie, DatabaseHandler.TABLE_SOCIAL);
 
 
+                                /*
                                 numDone++;
                                 if(numDone == 8){
                                     Intent start = new Intent(SplashScreen.this, WelcomeActivity.class);
                                     startActivity(start);
                                    // hidePDialog();
                                 }
+                                */
 
                             } catch (JSONException e) {
                                 e.printStackTrace();
@@ -574,19 +569,26 @@ public class SplashScreen extends Activity {
 
                         }
 
+                        pDialog.setMessage("Now fetching Math...");
+                        fetchMath();
+
                     }
 
                 }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
+                System.out.println("rad");
+                System.out.println(error.getLocalizedMessage());
+                System.out.println(error.getCause());
+                System.out.println(error.getStackTrace());
                 VolleyLog.d(TAG, "Error: " + error.getMessage());
-                hidePDialog();
+               // hidePDialog();
             }
 
 
 
         });
-
+        System.out.println("lets gooo");
         // Adding request to request queue
         AppController.getInstance().addToRequestQueue(movieReq);
 
@@ -602,6 +604,7 @@ public class SplashScreen extends Activity {
        // if(!pDialog.isShowing()){
        //     pDialog.show();
       //  }
+        System.out.println("math");
         HttpURLConnection.setFollowRedirects(true);
         JsonArrayRequest movieReq = new JsonArrayRequest(url_math,
                 new Response.Listener<JSONArray>() {
@@ -609,7 +612,7 @@ public class SplashScreen extends Activity {
                     public void onResponse(JSONArray response) {
                         Log.d(TAG, response.toString());
                         //hidePDialog();
-
+                        System.out.println("maths");
                         // Parsing json
                         for (int i = 0; i < response.length(); i++) {
                             try {
@@ -624,13 +627,6 @@ public class SplashScreen extends Activity {
                                 movie.setThumbnailUrl(path);
                                 db.addContact(movie, DatabaseHandler.TABLE_MATH);
 
-                                numDone++;
-                                if(numDone == 8){
-                                    Intent start = new Intent(SplashScreen.this, WelcomeActivity.class);
-                                    startActivity(start);
-                                    //hidePDialog();
-                                }
-
 
                             } catch (JSONException e) {
                                 e.printStackTrace();
@@ -641,12 +637,19 @@ public class SplashScreen extends Activity {
                             }
 
                         }
+                        pDialog.setMessage("Now fetching language arts...");
+                        fetchPoet();
+
 
                     }
 
                 }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
+                System.out.println("rad2");
+                System.out.println(error.getLocalizedMessage());
+                System.out.println(error.getCause());
+                System.out.println(error.getStackTrace());
                 VolleyLog.d(TAG, "Error: " + error.getMessage());
                 hidePDialog();
             }
@@ -675,6 +678,7 @@ public class SplashScreen extends Activity {
                         Log.d(TAG, response.toString());
                         //hidePDialog();
                         // Parsing json
+                        System.out.println("poet");
                         for (int i = 0; i < response.length(); i++) {
                             try {
 
@@ -688,13 +692,6 @@ public class SplashScreen extends Activity {
                                 movie.setThumbnailUrl(path);
                                 db.addContact(movie, DatabaseHandler.TABLE_POET);
 
-                                numDone++;
-                                if(numDone == 8){
-                                    Intent start = new Intent(SplashScreen.this, WelcomeActivity.class);
-                                    startActivity(start);
-                                    //hidePDialog();
-                                }
-
 
                             } catch (JSONException e) {
                                 e.printStackTrace();
@@ -705,6 +702,8 @@ public class SplashScreen extends Activity {
                             }
 
                         }
+                        pDialog.setMessage("Now fetching physics...");
+                        fetchPhy();
 
                     }
 
@@ -740,6 +739,7 @@ public class SplashScreen extends Activity {
                         Log.d(TAG, response.toString());
                        // hidePDialog();
                         // Parsing json
+                        System.out.println("physics");
                         for (int i = 0; i < response.length(); i++) {
                             try {
 
@@ -753,12 +753,6 @@ public class SplashScreen extends Activity {
                                 movie.setThumbnailUrl(path);
                                 db.addContact(movie, DatabaseHandler.TABLE_PHY);
 
-                                numDone++;
-                                if(numDone == 8){
-                                    Intent start = new Intent(SplashScreen.this, WelcomeActivity.class);
-                                    startActivity(start);
-                                   // hidePDialog();
-                                }
 
 
                             } catch (JSONException e) {
@@ -770,6 +764,9 @@ public class SplashScreen extends Activity {
                             }
 
                         }
+                        pDialog.setMessage("Now fetching biology...");
+                        fetchBio();
+
 
                     }
 
@@ -803,7 +800,7 @@ public class SplashScreen extends Activity {
                     public void onResponse(JSONArray response) {
                         Log.d(TAG, response.toString());
                      //   hidePDialog();
-
+                        System.out.println("bio");
                         // Parsing json
                         for (int i = 0; i < response.length(); i++) {
                             try {
@@ -818,12 +815,7 @@ public class SplashScreen extends Activity {
                                 movie.setThumbnailUrl(path);
                                 db.addContact(movie, DatabaseHandler.TABLE_BIO);
 
-                                numDone++;
-                                if(numDone == 8){
-                                    Intent start = new Intent(SplashScreen.this, WelcomeActivity.class);
-                                    startActivity(start);
-                                   // hidePDialog();
-                                }
+
 
 
                             } catch (JSONException e) {
@@ -835,6 +827,9 @@ public class SplashScreen extends Activity {
                             }
 
                         }
+
+                        pDialog.setMessage("Now fetching chemistry...");
+                        fetchChem();
 
                     }
 
@@ -869,6 +864,7 @@ public class SplashScreen extends Activity {
                         Log.d(TAG, response.toString());
                        // hidePDialog();
                         // Parsing json
+                        System.out.println("chem");
                         for (int i = 0; i < response.length(); i++) {
                             try {
 
@@ -882,12 +878,7 @@ public class SplashScreen extends Activity {
                                 movie.setThumbnailUrl(path);
                                 db.addContact(movie, DatabaseHandler.TABLE_CHEM);
 
-                                numDone++;
-                                if(numDone == 8){
-                                    Intent start = new Intent(SplashScreen.this, WelcomeActivity.class);
-                                    startActivity(start);
-                                   // hidePDialog();
-                                }
+
 
 
                             } catch (JSONException e) {
@@ -899,6 +890,8 @@ public class SplashScreen extends Activity {
                             }
 
                         }
+                        pDialog.setMessage("Now fetching geology...");
+                        fetchGeo();
 
                     }
 
@@ -934,6 +927,7 @@ public class SplashScreen extends Activity {
                         Log.d(TAG, response.toString());
                       //  hidePDialog();
                         // Parsing json
+                        System.out.println("geo");
                         for (int i = 0; i < response.length(); i++) {
                             try {
 
@@ -947,12 +941,7 @@ public class SplashScreen extends Activity {
                                 movie.setThumbnailUrl(path);
                                 db.addContact(movie, DatabaseHandler.TABLE_GEO);
 
-                                numDone++;
-                                if(numDone == 8){
-                                    Intent start = new Intent(SplashScreen.this, WelcomeActivity.class);
-                                    startActivity(start);
-                                    //hidePDialog();
-                                }
+
 
 
                             } catch (JSONException e) {
@@ -964,6 +953,9 @@ public class SplashScreen extends Activity {
                             }
 
                         }
+
+                        pDialog.setMessage("Now fetching computer science...");
+                        fetchCompsci();
 
                     }
 
@@ -998,7 +990,7 @@ public class SplashScreen extends Activity {
                         Log.d(TAG, response.toString());
                        // hidePDialog();
 
-
+                        System.out.println("compsci");
                         // Parsing json
                         for (int i = 0; i < response.length(); i++) {
                             try {
@@ -1009,16 +1001,12 @@ public class SplashScreen extends Activity {
                                 movie.setThumbnailUrl(obj.getString("image"));
                                 movie.setDesc(obj.getString("desc"));
 
+                                System.out.println("before" + path);
                                 new AsyncCaller(movie.getTitle(), movie.getThumbnailUrl()).execute().get();
+                                System.out.println("after" + path);
                                 movie.setThumbnailUrl(path);
                                 db.addContact(movie, DatabaseHandler.TABLE_COMPSCI);
 
-                                numDone++;
-                                if(numDone == 8){
-                                    Intent start = new Intent(SplashScreen.this, WelcomeActivity.class);
-                                    startActivity(start);
-                                  //  hidePDialog();
-                                }
 
 
                             } catch (JSONException e) {
@@ -1030,6 +1018,11 @@ public class SplashScreen extends Activity {
                             }
 
                         }
+
+                        pDialog.setMessage("Done fetcing! Loading application :)");
+                        pDialog.dismiss();
+                        Intent i = new Intent(SplashScreen.this, WelcomeActivity.class);
+                        startActivity(i);
 
                     }
 
